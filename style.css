@@ -1,50 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-  font-size: 1rem;
-  background: #333;
-  color: #fff;
-  padding: 2rem 1rem;
+.welcome-text {
+  font-size: 3rem;
+  color: #333;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(7) 1s forwards, blink 0.5s step-end infinite;
 }
 
-main {
-  padding: 1rem;
+.pencil {
+  width: 60px;
+  margin-bottom: 1rem;
+  animation: float 2s ease-in-out infinite;
 }
 
-section.pricing h2 {
-  color: #444;
-  margin-top: 2rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+@keyframes typing {
+  to {
+    width: 9ch;
+  }
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 300px;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
-li {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0.5rem 0;
-}
-
-.frame-list li {
-  font-size: 0.95rem;
-  font-weight: normal;
-}
-
-
-footer {
-  margin-top: 2rem;
-  background: #eee;
-  padding: 1rem;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
