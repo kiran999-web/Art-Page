@@ -3,46 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Art Pricing</title>
+  <title>Welcome</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Redirect to pricing page after 3.5 seconds
+    setTimeout(() => {
+      window.location.href = "pricing.html";
+    }, 3500);
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Art Pricing(Excluding delivery charges)</h1>
-    <p>Graphite & Color Pencil Portraits</p>
-  </header>
-
- <main>
-  <section class="pricing">
-    <h2>Graphite</h2>
-    <ul>
-      <li>Single Face A4 – ₹2500</li>
-      <li>Double Face A4 – ₹4000</li>
-      <li>Single Face A3 – ₹3500</li>
-      <li>Double Face A3 – ₹6000</li>
-    </ul>
-
-    <h2>Color Pencil</h2>
-    <ul>
-      <li>Single Face A4 – ₹3000</li>
-      <li>Double Face A4 – ₹5000</li>
-      <li>Single Face A3 – ₹4000</li>
-      <li>Double Face A3 – ₹7000</li>
-    </ul>
-
-    <h2>Frame Charges</h2>
-    <ul class="frame-list">
-      <li>A3 – ₹600</li>
-      <li>A4 – ₹400</li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <p><strong>Note:</strong><br>
-  Additional charges for Customized artworks and complex detailing</p>
-  <p>Order via Instagram DM <strong>@999.art.999</strong></p>
-</footer>
-
+  <div class="intro">
+    <img src="pencil.png" alt="Pencil" class="pencil" />
+    <h1 class="welcome-text">Welcome</h1>
+  </div>
 </body>
 </html>
