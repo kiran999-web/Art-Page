@@ -1,4 +1,4 @@
-/* General body reset */
+/* General Reset */
 body {
   margin: 0;
   padding: 0;
@@ -8,22 +8,9 @@ body {
 }
 
 /* WELCOME PAGE STYLES */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
-}
-
-/* WELCOME PAGE STYLES */
-/* Reset and full-screen center */
 body.welcome {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   width: 100vw;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,14 +26,14 @@ body.welcome {
 }
 
 .welcome-container svg {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
 }
 
-/* Text animation */
+/* Text Animation */
 .welcome-text {
   font-family: 'Great Vibes', cursive;
-  font-size: 200px;
+  font-size: 180px;
   fill: none;
   stroke: #000;
   stroke-width: 2;
@@ -65,6 +52,7 @@ svg image {
   width: 100px;
   height: 100px;
 }
+
 /* PRICING PAGE STYLES */
 body.pricing {
   text-align: center;
