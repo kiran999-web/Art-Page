@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Redirect after 4.5s to pricing.html
+    // Redirect to pricing.html after 4.5 seconds
     setTimeout(() => {
       window.location.href = "pricing.html";
     }, 4500);
@@ -17,13 +17,12 @@
   <div class="welcome-container">
     <svg viewBox="0 0 800 200">
       <path id="welcomePath"
-        d="M20,120 Q60,30 120,100 T220,100 T320,100 T420,100 T520,100 T620,100"
+        d="M20,120 Q100,20 200,100 T400,100 T600,100 T750,100"
         fill="none"
-        stroke="#000"
-        stroke-width="2"
+        stroke="transparent"
       />
       <text>
-        <textPath href="#welcomePath" startOffset="0%" class="welcome-text">Welcome</textPath>
+        <textPath href="#welcomePath" class="welcome-text">Welcome</textPath>
       </text>
       <image href="pencil.png" width="40" height="40">
         <animateMotion dur="3s" repeatCount="1" fill="freeze">
