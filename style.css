@@ -30,6 +30,13 @@ li {
   margin: 0.5rem 0;
 }
 
+.frame-detail {
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+
 footer {
   margin-top: 2rem;
   background: #eee;
