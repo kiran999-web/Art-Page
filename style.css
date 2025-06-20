@@ -1,46 +1,31 @@
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   background: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-container {
+  width: 100%;
+  max-width: 800px;
 }
 
 .welcome-text {
-  font-size: 3rem;
-  color: #333;
-  border-right: 2px solid #333;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 2s steps(7) 1s forwards, blink 0.5s step-end infinite;
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawText 3s forwards ease-in-out;
 }
 
-.pencil {
-  width: 60px;
-  margin-bottom: 1rem;
-  animation: float 2s ease-in-out infinite;
-}
-
-@keyframes typing {
+@keyframes drawText {
   to {
-    width: 9ch;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
+    stroke-dashoffset: 0;
   }
 }
