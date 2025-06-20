@@ -13,18 +13,22 @@
     }, 4500);
   </script>
 </head>
-<body>
+<body class="welcome">
   <div class="welcome-container">
-    <svg viewBox="0 0 800 200">
+    <svg viewBox="0 0 1200 300">
+      <!-- Path for animation -->
       <path id="welcomePath"
-        d="M20,120 Q100,20 200,100 T400,100 T600,100 T750,100"
-        fill="none"
-        stroke="transparent"
-      />
+            d="M200,150 C300,50 500,50 600,150 S800,250 1000,150"
+            fill="none"
+            stroke="transparent" />
+
+      <!-- Animated Welcome Text -->
       <text>
         <textPath href="#welcomePath" class="welcome-text">Welcome</textPath>
       </text>
-      <image href="pencil.png" width="40" height="40">
+
+      <!-- Pencil Image Follows the Path -->
+      <image href="pencil.png" width="60" height="60">
         <animateMotion dur="3s" repeatCount="1" fill="freeze">
           <mpath href="#welcomePath" />
         </animateMotion>
