@@ -4,18 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Redirect to pricing page after 3.5 seconds
+    // Redirect after 4.5s to pricing.html
     setTimeout(() => {
       window.location.href = "pricing.html";
-    }, 3500);
+    }, 4500);
   </script>
 </head>
 <body>
-  <div class="intro">
-    <img src="pencil.png" alt="Pencil" class="pencil" />
-    <h1 class="welcome-text">Welcome</h1>
+  <div class="welcome-container">
+    <svg viewBox="0 0 800 200">
+      <path id="welcomePath"
+        d="M20,120 Q60,30 120,100 T220,100 T320,100 T420,100 T520,100 T620,100"
+        fill="none"
+        stroke="#000"
+        stroke-width="2"
+      />
+      <text>
+        <textPath href="#welcomePath" startOffset="0%" class="welcome-text">Welcome</textPath>
+      </text>
+      <image href="pencil.png" width="40" height="40">
+        <animateMotion dur="3s" repeatCount="1" fill="freeze">
+          <mpath href="#welcomePath" />
+        </animateMotion>
+      </image>
+    </svg>
   </div>
 </body>
 </html>
