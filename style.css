@@ -21,8 +21,8 @@ body {
 body.welcome {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 150vh;
+  width: 150vw;
   background: #fff;
   display: flex;
   justify-content: center;
