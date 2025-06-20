@@ -1,16 +1,26 @@
+/* ======================
+   General Body Styling
+====================== */
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+
+/* ======================
+   Welcome Page (index.html)
+====================== */
+.welcome-container {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.welcome-container {
-  width: 100%;
-  max-width: 800px;
+  margin: 0 auto;
 }
 
 .welcome-text {
@@ -28,4 +38,65 @@ body {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+/* ======================
+   Pricing Page (pricing.html)
+====================== */
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+.frame-list li {
+  font-size: 0.95rem;
+  font-weight: normal;
+}
+
+footer {
+  margin-top: 3rem;
+  background: #eee;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+footer strong {
+  color: #000;
 }
