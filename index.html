@@ -14,18 +14,14 @@
 </head>
 <body class="welcome">
   <div class="welcome-container">
-    <svg viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet">
       <defs>
-        <path id="welcomePath" d="M100,200 C300,50 700,250 900,200" />
+        <path id="welcomePath" d="M100,200 C300,50 900,350 1100,200" />
       </defs>
-
-      <!-- Animated Welcome Text -->
       <text>
         <textPath href="#welcomePath" class="welcome-text">Welcome</textPath>
       </text>
-
-      <!-- Pencil Image -->
-      <image href="pencil.png" width="60" height="60">
+      <image href="pencil.png" width="100" height="100">
         <animateMotion dur="3s" repeatCount="1" fill="freeze">
           <mpath href="#welcomePath" />
         </animateMotion>
