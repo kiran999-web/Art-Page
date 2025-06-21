@@ -1,59 +1,30 @@
-/* General Reset */
+/* ===== GENERAL RESET ===== */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #fff;
   color: #222;
+  background: #fff;
 }
 
-/* WELCOME PAGE STYLES */
+/* ===== START PAGE (Welcome with Image) ===== */
 body.welcome {
   height: 100vh;
   width: 100vw;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.welcome-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.welcome-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
 
-.welcome-container svg {
-  width: 100%;
-  height: auto;
-}
-
-/* Text Animation */
-.welcome-text {
-  font-family: 'Great Vibes', cursive;
-  font-size: 180px;
-  fill: none;
-  stroke: #000;
-  stroke-width: 2;
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  animation: drawText 3s forwards ease-in-out;
-}
-
-@keyframes drawText {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-svg image {
-  width: 200px;
-  height: 200px;
-}
-
-/* PRICING PAGE STYLES */
+/* ===== PRICING PAGE ===== */
 body.pricing {
   text-align: center;
 }
